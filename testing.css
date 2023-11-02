@@ -43,6 +43,11 @@ p {
   color: var(--text-custom);
 }
 
+.btn-custom{
+  background-color: #21D192;
+}
+
+
 /* Navbar - Desktop */
 .navbar-custom {
   background-color: var(--nav-color);
@@ -91,6 +96,8 @@ nav a:hover {
 .icon {
   cursor: pointer;
   height: 2rem;
+  top: -4px;
+  position: relative;
 }
 /* carousel */
 .carousel {
@@ -101,13 +108,7 @@ nav a:hover {
 .carousel-inner {
   border-radius: 25px;
 }
-.Logo {
-  display: none;
-}
 
-.Logo-sm {
-  display: none;
-}
 /* Border custom */
 .border-custom {
   border-color: var(--border-color);
@@ -122,6 +123,10 @@ nav a:hover {
   margin-left: 10%;
   margin-bottom: 10px;
   background-color: var(--card-color);
+}
+.font-size{
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 
@@ -185,4 +190,28 @@ nav a:hover {
   .mobile{
     display: block;
   }
+
+  .desk_vm{
+    display: none;
+  }
+  .logos{
+    margin: auto;
+  }
+  /* .event{
+    margin: auto;
+    position: relative;
+    top:5px;
+    margin-top: 5px;
+    left:5px;
+  } */
+              .card {
+                margin-top: 15px;
+                margin-bottom: 15px;
+                left: 0px;  
+            }
+  .our-team{
+    top: 10px;
+    margin-top: 10px;
+  }
+
 }
