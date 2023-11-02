@@ -326,6 +326,26 @@
         <!-- Copyright -->
     </footer>
     <!-- Footer -->
+    <script>
+        fetch('https://energy-club-eec.github.io/json/home.json')
+            .then(response => response.json())
+            .then(data => {
+                // Access the data for event1 and event2
+                const event1 = data.event1;
+                const event2 = data.event2;
+
+                // Populate the card elements with data from the JSON
+                document.getElementById('event1-title').textContent = event1.name;
+                document.getElementById('event1-description').textContent = event1['short-description'];
+                document.getElementById('event1-button').href = event1.btn;
+
+                document.getElementById('event2-title').textContent = event2.name;
+                document.getElementById('event2-description').textContent = event2['short-description'];
+                document.getElementById('event2-button').href = event2.btn;
+            })
+            .catch(error => console.error('Error loading JSON data:', error));
+
+    </script>
 </body>
 
 </html>
