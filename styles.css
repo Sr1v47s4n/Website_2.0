@@ -49,6 +49,11 @@ p {
 
 .btn-custom {
   background-color: #21d192;
+  color: #ffffff;
+}
+.btn-custom:hover {
+  background-color: #32c36c;
+  color: #ffffff;
 }
 
 /* Navbar - Desktop */

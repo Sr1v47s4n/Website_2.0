@@ -95,37 +95,41 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <a class="navbar-brand" href="/">
-                <img src="https://ik.imagekit.io/energyclub/Assets/logo.png" alt="Energy Club" />
+    <nav class="navbar navbar-expand-lg navbar-custom shadow">
+        <div class="container"><a class="navbar-brand">
+                <img src="https://ik.imagekit.io/energyclub/Assets/logo.png" width="75" height="75" class="d-inline-block "
+                    alt="">
+                &nbsp Energy Club
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/home">Home</a>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="/about">About</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item px-2">
                         <a class="nav-link" href="/past-events">Events</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item px-2">
                         <a class="nav-link" href="/our_team">Our Team</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item px-2">
                         <a class="nav-link" href="/contact">Contact</a>
+                    </li>
+                    <li class="nav-item px-2">
+                    
+                        <img id="modeToggle" onclick="setTheme()" class="icon color-icon" src="theme_dark.png" alt="Theme" />
                     </li>
                 </ul>
             </div>
-        </div>
     </nav>
-    <h2 class="text-center text-white mt-5">Contact Us</h2>
-    <hr class="border-white" width="80%" style="left:10%;position: relative;">
-    <form id="contact-form" class="form-card text-white">
+    <h2 class="text-center text-custom mt-5">Contact Us</h2>
+    <hr class="border-custom" width="80%" style="left:10%;position: relative;">
+    <form id="contact-form" class="form-card text-color">
         <div class="form-group" style="padding: 10px;">
-            <label for="InputName" class="text-white" style="padding: 10px;">Full Name</label>
+            <label for="InputName" class="text-color" style="padding: 10px;">Full Name</label>
             <input type="text" style="padding: 10px;" class="form-control" id="InputName" placeholder="Enter Full Name"
                 required>
         </div>
@@ -145,107 +149,119 @@
     margin-left: 45%;">Submit</button>
     </form>
 
-    <footer class="text-center text-lg-start text-white" style="background-color: #090909">
-        <div class="container p-4 pb-0">
-            <section class="desk-vm">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 mb-4 mb-0">
-                        <img src="https://ik.imagekit.io/energyclub/Assets/logo_txt.png" height="100px" alt="Logo">
-                        <h5>Easwari Engineering College</h5>
-                        <p>
+<footer class="text-center bg-custom text-lg-start text-color">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-between p-4 text-color" style="background-color: #21D192">
+        <!-- Left -->
+        <div class="me-5 desk_vm">
+            <span class="desk_vm">Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
 
-                            Bharathi Salai, Ramapuram,</br>
-                            Chennai – 600 089.</br>
-                            Tamil Nadu, India
+        <!-- Right -->
+        <div class="logos">
+            <a href="mailto:energyclubeec@gmail.com" class="text-white me-4">
+                <i class="bi bi-google"></i>
+            </a>
+            <a href="https://www.youtube.com/@energyclubeec" class="text-white me-4">
+                <i class="bi bi-youtube"></i>
+            </a>
+            <a href="https://www.instagram.com/energy_club_eec/" class="text-white me-4">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/energy-club-eec/" class="text-white me-4">
+                <i class="bi bi-linkedin"></i>
+            </a>
+
+        </div>
+        <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+        <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h5 class="text-uppercase fw-bold">Energy Club</h5>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: #7c4dff; height: 2px" />
+                    <h6>Easwari Engineering College</h6>
+                    <p>
+
+                        Bharathi Salai, Ramapuram,</br>
+                        Chennai – 600 089.</br>
+                        Tamil Nadu, India
                         </p>
-                    </div>
+                        </div>
+                <!-- Grid column -->
 
-                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase">Socials</h5>
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 desk_vm">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold">Useful Links</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+                    <p>
+                        <a href="/home" class="text-color">Home</a>
+                    </p>
+                    <p>
+                        <a href="/past-events" class="text-color">Events</a>
+                    </p>
+                    <p>
+                        <a href="/our_team" class="text-color">Our Team</a>
+                    </p>
+                    <p>
+                        <a href="https://srmeaswari.ac.in/" class="text-color">College Site</a>
+                    </p>
 
-                        <ul class="list-unstyled mb-0">
-                            <li>
-                                <a href="https://www.instagram.com/energy_club_eec/" class="text-white">Instagram</a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/company/energy-club-eec/"
-                                    class="text-white">Linkedin</a>
-                            </li>
-                            <li>
-                                <a href="mailto:energyclubofeec@gmail.com" class="text-white">Email</a>
-                            </li>
-                            <li>
-                                <a href="https://www.youtube.com/@energyclubeec" class="text-white">Youtube</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-2 col-md-6 mb-3 mb-md-0">
-                        <h5 class="text-uppercase">Events</h5>
-
-                        <ul class="list-unstyled mb-0">
-                            <li>
-                                <a href="#" class="text-white">Technical</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-white">Non-Technical</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-white">Flagship</a>
-                            </li>
-
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase">Website</h5>
-
-                        <ul class="list-unstyled mb-0">
-                            <li>
-                                <a href="/home" class="text-white">Home</a>
-                            </li>
-                            <li>
-                                <a href="/our_team" class="text-white">Our Team</a>
-                            </li>
-                            <li>
-                                <a href="https://srmeaswari.ac.in/" class="text-white">College Site</a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/srivatsan-sk/" class="text-white">Developer</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase">Support</h5>
-
-                        <ul class="list-unstyled mb-0">
-                            <li>
-                                <a href="/our_team" class="text-white">Our Team</a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/srivatsan-sk/" class="text-white">Developer</a>
-                            </li>
-                            <li>
-                                <a href="mailto:energyclubofeec@gmail.com" class="text-white">Report</a>
-                            </li>
-                            <li>
-                                <a href="/about" class="text-white">Contact Us</a>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
-            </section>
+                <!-- Grid column -->
 
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 desk_vm">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold">Support</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+                    <p>
+                        <a href="https://www.linkedin.com/in/srivatsan-sk/" class="text-color">Developer</a>
+                    </p>
+                    <p>
+                        <a href="mailto:energyclubeec@gmail.com" class="text-color">Enquiry</a>
+                    </p>
+                    <p>
+                        <a href="mailto:energyclubeec@gmail.com" class="text-color">Report</a>
+                    </p>
 
+                </div>
+                <!-- Grid column -->
 
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4 desk_vm">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold">Contact</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+                    <p><a href="https://maps.app.goo.gl/aEi4pAXkXCxscni86" class="text-bold">Easwari Engineering
+                            College </a></p>
+                    <p><a class="text-color" href="mailto:energyclubeec@gmail.com">energyclubeec@gmail.com</a></p>
+
+                </div>
+                <!-- Grid column -->
+                </div>
+            <!-- Grid row -->
         </div>
+        </section>
+    <!-- Section: Links  -->
 
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-            © 2023 Copyright:
-            <a class="text-white" href="https://energyclubeec.org.in/">Energy Club</a>
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2023 Copyright:
+        <a class="text-color" href="https://energyclubeec.org.in">Energy Club</a>
         </div>
-    </footer>
+    <!-- Copyright -->
+</footer>
 
     <script>
         const form = document.getElementById('contact-form');
