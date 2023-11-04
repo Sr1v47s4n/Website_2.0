@@ -21,7 +21,7 @@
   --nav-text: #32c36c;
   --text-color: #ffffff;
   --text-custom: #32c36c;
-  --card-color: #090909;
+  --card-color: #100f0f;
   --border-color: #4f4e51;
   --bg-color: #090909;
 }
@@ -94,6 +94,7 @@ nav a {
   text-decoration-color: var(--border-color);
 }
 nav a:hover {
+  cursor: pointer;
   text-decoration: underline;
   text-underline-offset: 1rem;
   color: var(--nav-text);
