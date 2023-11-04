@@ -30,7 +30,7 @@
     <div id="loading-screen" style="display: block;">
         <!-- Include content from ani.html directly -->
         <div>
-            <img class="ani" id="ani" src="anin.webp" />
+            <img class="ani" id="ani" src="https://ik.imagekit.io/energyclub/Assets/logo.webp" />
         </div>
     </div>
     <main id="main-content" style="display: none;">
@@ -330,8 +330,6 @@
             loadingScreen.style.display = "none";
             mainContent.style.display = "block";
         }
-
-        // Call the function to hide the loading screen after 3 seconds (3000 milliseconds)
         setTimeout(hideLoadingScreen, 3000);
         fetch('https://energy-club-eec.github.io/json/home.json')
             .then(response => response.json())

@@ -57,6 +57,17 @@ p {
   background-color: #32c36c;
   color: #ffffff;
 }
+/* Animation */
+.ani {
+  position: center;
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+  margin-bottom: 15%;
+}
 
 /* Navbar - Desktop */
 .navbar-custom {
@@ -168,6 +179,14 @@ nav a:hover {
 @media screen and (max-width: 600px) {
   .logo {
     font-size: 1.5rem;
+  }
+   .ani {
+    width: 50px;
+    height: 50px;
+    margin-top: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   .nav-links {
     flex-direction: column;

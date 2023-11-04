@@ -593,18 +593,17 @@
             <!-- Copyright -->
         </footer>
     </main>
-    <script>
-        // Function to create a Bootstrap card for each event
-        // Function to hide the loading screen and show the main content
-        AOS.init();
+<script>
+    AOS.init();
         function hideLoadingScreen() {
             const loadingScreen = document.getElementById("loading-screen");
             const mainContent = document.getElementById("main-content");
 
             loadingScreen.style.display = "none";
             mainContent.style.display = "block";
-        } setTimeout(hideLoadingScreen, 3000);
-    </script>
+        }
+        setTimeout(hideLoadingScreen, 3000);
+        </script>
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-// Dark / light mode
+
 const btn = document.getElementById("modeToggle");
 const themeIcons = document.getElementById("color-icon");
 const currentTheme = localStorage.getItem("theme");
@@ -39,5 +39,6 @@ function setLightMode() {
 
 
 }
+
 
 
