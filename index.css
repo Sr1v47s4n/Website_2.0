@@ -1,0 +1,47 @@
+/* About */
+.about{
+  max-width: 80%; 
+  border-radius:25px;
+  margin-left: 10%;
+  margin-bottom: 10px;
+  background-color: var(--card-color);
+}
+
+
+
+/* Our Success */
+.our-success-section {
+  width: 80%;
+  margin: 0 auto;
+  color: var(--text-custom);
+  position: relative;
+  animation: fadeInUp 2s ease;
+}
+
+/* our-team */
+.our-team{
+    width: 80%;
+  margin: 0 auto;
+  color: var(--text-custom);
+  position: relative;
+  animation: fadeInUp 2s ease;
+
+}
+
+
+
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 600px) {
+ .our-team{
+    top: 10px;
+    margin-top: 10px;
+  }
+
+}

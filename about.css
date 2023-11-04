@@ -1,0 +1,88 @@
+.about {
+  animation: fadeIn 2s ease;
+  position: relative;
+  width: 80%;
+  left: 10%;
+}
+
+.our-success-section {
+  top: 20px;
+  width: 80%;
+  margin: 0 auto;
+  color: #32c36c;
+  margin-top: 80px;
+  position: relative;
+  animation: fadeInUp 2s ease;
+}
+
+.our-team {
+  width: 80%;
+  margin: 0 auto;
+  color: #32c36c;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.Logo {
+  display: none;
+}
+
+.Logo-sm {
+  display: none;
+}
+
+@media (max-width: 417px) {
+    .sm-box{
+        margin-top: 35%;
+    }
+  .Logo {
+    width: 235px;
+    height: 235px;
+    left: 18%;
+    top: 60%;
+    display: block;
+    position: relative;
+  }
+
+  .Logo-sm {
+    top: 0%;
+    text-align: center;
+    color: #32c36c;
+    font-size: 28px;
+    font-weight: 600;
+    word-wrap: break-word;
+    display: block;
+    position: relative;
+  }
+
+  .about {
+    width: 90%;
+    left: 5%;
+    margin-top: 150px;
+  }
+  .logos{
+    display: block;
+  }
+}
+.ani {
+  position: center;
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+  margin-bottom: 15%;
+}
+
+@media screen and (max-width: 600px) {
+  .ani {
+    width: 50px;
+    height: 50px;
+    margin-top: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
