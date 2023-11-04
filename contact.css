@@ -1,0 +1,23 @@
+.form-card {
+  top: 50px;
+  position: relative;
+  background-color: var(--card-color);
+  width: 80%;
+  left: 10%;
+  animation: fadeInUp 2s ease;
+  margin-bottom: 50px;
+  padding: 10px;
+  border-radius: 25px;
+
+  height: max-content;
+}
+.btn {
+  margin: 10px;
+  margin-left: 45%;
+}
+
+@media screen and (max-width: 600px) {
+  .btn {
+    margin-left: 32%;
+  }
+}
