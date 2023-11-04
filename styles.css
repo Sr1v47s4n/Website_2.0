@@ -13,6 +13,7 @@
   --card-color: #ffffff;
   --border-color: #ffffff;
   --bg-color: #ffffff;
+  --our-team:#32c36c;
 }
 /* Dark Mode */
 
@@ -21,9 +22,10 @@
   --nav-text: #32c36c;
   --text-color: #ffffff;
   --text-custom: #32c36c;
-  --card-color: #100f0f;
+  --card-color: #090909;
   --border-color: #4f4e51;
-  --bg-color: #090909;
+  --bg-color: #000000;
+  --our-team:#090909;
 }
 body {
   font-family: "Poppins", sans-serif;

@@ -1,0 +1,147 @@
+:root {
+  --bg-staff: #ffffff;
+  --bg-final: #ffffff;
+  --bg-third: #ffffff;
+  --bg-new: #ffffff;
+}
+[theme="dark"] {
+  --bg-staff: linear-gradient(180deg, rgb(170, 8, 37), rgba(186, 106, 13, 0.5));
+  --bg-final: linear-gradient(
+    180deg,
+    rgb(127.7, 8.73, 30.14) 0%,
+    rgba(127.7, 8.73, 30.14, 0) 100%
+  );
+  --bg-third: linear-gradient(
+    180deg,
+    rgba(39.02, 14.96, 107.51, 0.82) 0%,
+    rgba(39.02, 14.96, 107.51, 0) 100%
+  );
+  --bg-new: linear-gradient(
+    180deg,
+    rgb(6.63, 103.26, 56.88) 0%,
+    rgba(12, 134, 97, 0) 100%
+  );
+}
+
+.bg-custom-staff {
+  background: var(--bg-staff);
+  background-size: 200% 200%;
+  border: 1px solid var(--our-team);
+  animation: gradientAnimation 5s ease infinite;
+  position: relative;
+  overflow: hidden;
+}
+
+#staff {
+  position: relative;
+  left: 25%;
+}
+
+.bg-custom-final {
+  background: var(--bg-final);
+  background-size: 200% 200%;
+  border: 1px solid var(--our-team);
+  animation: gradientAnimation 5s ease infinite;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-custom-third {
+  background: var(--bg-third);
+  background-size: 200% 200%;
+  border: 1px solid var(--our-team);
+  animation: gradientAnimation 5s ease infinite;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-custom-new {
+  background: var(--bg-new);
+  background-size: 200% 200%;
+  border: 1px solid var(--our-team);
+  animation: gradientAnimation 5s ease infinite;
+  position: relative;
+  overflow: hidden;
+}
+
+.animated-gradient::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  animation: bubbleAnimation 4s linear infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 100% 0;
+  }
+
+  50% {
+    background-position: 0 100%;
+  }
+
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+@keyframes bubbleAnimation {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-1000px) translateX(1000px);
+    opacity: 0;
+  }
+}
+
+.card {
+  position: relative;
+  top: 50px;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.txt {
+  font-size: 25px;
+}
+
+@media (max-width: 417px) {
+  .desk {
+    display: none;
+    bottom: 0%;
+    position: fixed;
+  }
+
+  #staff {
+    position: relative;
+    left: 0%;
+  }
+}
+
+.ani {
+  position: center;
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+  margin-bottom: 15%;
+}
+
+@media screen and (max-width: 600px) {
+  .ani {
+    width: 50px;
+    height: 50px;
+    margin-top: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
