@@ -20,6 +20,10 @@ app.get("/:page", (req, res) => {
     }
   });
 });
+app.get("*", (req, res) => {
+  const errorPath = path.join(__dirname, `error.html`);
+  res.status(404).sendFile(errorPath);
+});
 
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);

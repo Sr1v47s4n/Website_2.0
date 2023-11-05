@@ -13,9 +13,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (initialTheme === "dark") {
         setDarkMode();
+        updateImageSource(currentTheme = "dark");
         console.log("dark mode");
     } else {
         setLightMode();
+        updateImageSource(currentTheme = "light");
         console.log("light mode");
     }
 
@@ -30,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             setDarkMode();
         }
+        updateImageSource(currentTheme);
     }
 
     function setDarkMode() {
@@ -42,5 +45,14 @@ document.addEventListener("DOMContentLoaded", function () {
         document.body.removeAttribute("theme");
         localStorage.setItem("theme", "light");
         localStorage.setItem("colorMode", "light"); // Store the user's color mode preference
+    }
+    function updateImageSource(currentTheme) {
+        const logoImage = document.getElementById("ani");
+
+        if (currentTheme === "dark") {
+            logoImage.src = "https://ik.imagekit.io/energyclub/Assets/logo_dark.webp"; // Change to the dark theme image
+        } else {
+            logoImage.src = "https://ik.imagekit.io/energyclub/Assets/logo.webp"; // Change to the light theme image
+        }
     }
 })
