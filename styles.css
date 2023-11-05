@@ -14,6 +14,7 @@
   --border-color: #ffffff;
   --bg-color: #ffffff;
   --our-team:#32c36c;
+  --error-bg:#ececec;
 }
 /* Dark Mode */
 
@@ -26,9 +27,10 @@
   --border-color: #4f4e51;
   --bg-color: #000000;
   --our-team:#090909;
+  --error-bg:#1f1f1f;
 }
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Outfit";
   background-color: var(--bg-color);
 }
 html {

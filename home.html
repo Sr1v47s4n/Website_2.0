@@ -41,7 +41,7 @@
                 <div class="modal-content  bg-custom">
                     <div class="modal-header">
                         <h5 class="modal-title text-custom">Registration</h5>
-                        <button class="btn-close bg-custom" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <a class="text-color" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></a>
                     </div>
                     <div class="modal-body">
                         <a href="https://forms.gle/bsx1i2qb6A8gyzEo6">
@@ -376,6 +376,8 @@
 
             loadingScreen.style.display = "none";
             mainContent.style.display = "block";
+            var popUp = new bootstrap.Modal(document.getElementById('popUp'), {})
+            popUp.toggle()
         }
         setTimeout(hideLoadingScreen, 3000);
         fetch('https://energy-club-eec.github.io/json/home.json')

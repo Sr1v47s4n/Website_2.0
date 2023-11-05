@@ -11,12 +11,12 @@ app.use(express.static(path.join(__dirname, "")));
 app.get("/:page", (req, res) => {
   const page = req.params.page;
   const filePath = path.join(__dirname, `${page}.html`);
-
+  const errorPath = path.join(__dirname, `error.html`);
   fs.exists(filePath, (exists) => {
     if (exists) {
       res.sendFile(filePath);
     } else {
-      res.status(404).send("File not found");
+      res.status(404).sendFile(errorPath);
     }
   });
 });
