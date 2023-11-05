@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slytherin's Curse</title>
+    <title>Career Pursuit</title>
     <link rel="icon" href="https://ik.imagekit.io/energyclub/Assets/logo.png" type="image/x-icon">
     <meta name="description"
         content="Energy Club is a student club of Easwari Engineering College, Chennai. We are a group of students who are passionate about energy and its applications. We are a group of students who are passionate about energy and its applications.">
     <meta property="og:image" content="https://ik.imagekit.io/energyclub/Assets/logo.png">
-    <meta property="og:title" content="Slytherin's Curse" />
+    <meta property="og:title" content="Career Pursuit" />
     <meta property="og:site_name" content="Energy Club" />
     <meta property="og:type" content="website" />
     <meta property="og:developer" content="Srivatsan Sk" />
@@ -25,7 +25,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-custom shadow">
-        <div class="container"><a class="navbar-brand" href="/">
+        <div class="container"><a class="navbar-brand">
                 <img src="https://ik.imagekit.io/energyclub/Assets/logo.png" width="75" height="75"
                     class="d-inline-block " alt="">
                 &nbsp Energy Club
@@ -190,10 +190,10 @@
 
     <script>
 
-        fetch('https://energy-club-eec.github.io/json/events.json')
+        fetch('https://energy-club-eec.github.io/json/technotsav.json')
             .then(response => response.json())
             .then(data => {
-                const event = data['event7'];
+                const event = data['event2'];
                 if (event) {
                     document.getElementById('eventName').textContent = event.name;
                     document.getElementById('eventDate').textContent = event.date;

@@ -193,7 +193,7 @@
         fetch('https://energy-club-eec.github.io/json/events.json')
             .then(response => response.json())
             .then(data => {
-                const event = data['event10'];
+                const event = data['event9'];
                 if (event) {
                     document.getElementById('eventName').textContent = event.name;
                     document.getElementById('eventDate').textContent = event.date;
