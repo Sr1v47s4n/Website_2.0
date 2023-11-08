@@ -248,6 +248,8 @@
 
             loadingScreen.style.display = "none";
             mainContent.style.display = "block";
+            var popUp = new bootstrap.Modal(document.getElementById('popUp'), {})
+            popUp.toggle()
         }
 
         // Call the function to hide the loading screen after 3 seconds (3000 milliseconds)

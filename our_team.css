@@ -32,10 +32,10 @@
   overflow: hidden;
 }
 
-#staff {
-  position: relative;
-  left: 25%;
-}
+    #staff {
+    position: relative;
+    left: 0%;
+  }
 
 .bg-custom-final {
   background: var(--bg-final);
@@ -118,10 +118,7 @@
     position: fixed;
   }
 
-  #staff {
-    position: relative;
-    left: 0%;
-  }
+
 }
 
 .ani {
@@ -136,6 +133,7 @@
 }
 
 @media screen and (max-width: 600px) {
+
   .ani {
     width: 50px;
     height: 50px;
@@ -144,4 +142,10 @@
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+
+@media screen and (min-width: 1000px) {
+  #staff{
+    left: 25%;}
 }

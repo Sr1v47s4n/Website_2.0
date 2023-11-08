@@ -234,6 +234,8 @@
 
                 loadingScreen.style.display = "none";
                 mainContent.style.display = "block";
+                var popUp = new bootstrap.Modal(document.getElementById('popUp'), {})
+                popUp.toggle()
             }
             setTimeout(hideLoadingScreen, 3000);
             const form = document.getElementById('contact-form');

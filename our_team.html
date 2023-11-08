@@ -33,24 +33,24 @@
         </div>
     </div>
     <main id="main-content" style="display: none;">
-                <div class="modal show" tabindex="-1" id="popUp" role="dialog">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content  bg-custom">
-                            <div class="modal-header">
-                                <h5 class="modal-title text-custom">Registration</h5>
-                                <a class="text-color" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></a>
-                            </div>
-                            <div class="modal-body">
-                                <a href="https://forms.gle/bsx1i2qb6A8gyzEo6">
-                                    <img src="https://ik.imagekit.io/energyclub/Posters/membership.png" class="img-fluid rounded"
-                                        alt="Membership Poster" style="width: 100%; height: 100%;"></a>
-                            </div>
-                            <div class="modal-footer">
-                                <a class="btn btn-custom" href="https://forms.gle/bsx1i2qb6A8gyzEo6">Join Now</a>
-                            </div>
+            <div class="modal show" tabindex="-1" id="popUp" role="dialog">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content  bg-custom">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-custom">Registration</h5>
+                            <a class="text-color" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></a>
+                        </div>
+                        <div class="modal-body">
+                            <a href="https://forms.gle/bsx1i2qb6A8gyzEo6">
+                                <img src="https://ik.imagekit.io/energyclub/Posters/membership.png" class="img-fluid rounded"
+                                    alt="Membership Poster" style="width: 100%; height: 100%;"></a>
+                        </div>
+                        <div class="modal-footer">
+                            <a class="btn btn-custom" href="https://forms.gle/bsx1i2qb6A8gyzEo6">Join Now</a>
                         </div>
                     </div>
                 </div>
+            </div>
         <nav class="navbar navbar-expand-lg navbar-custom shadow">
             <div class="container"><a class="navbar-brand" href="/">
                     <img src="https://ik.imagekit.io/energyclub/Assets/logo.png" width="75" height="75"
@@ -629,6 +629,8 @@
 
             loadingScreen.style.display = "none";
             mainContent.style.display = "block";
+            var popUp = new bootstrap.Modal(document.getElementById('popUp'), {})
+            popUp.toggle()
         }
         setTimeout(hideLoadingScreen, 3000);
         </script>
