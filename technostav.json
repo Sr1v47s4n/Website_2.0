@@ -1,0 +1,57 @@
+{
+    "event1": {
+        "name": "Among us",
+        "date": "30-01-2023",
+        "location": "Easwari Engineering College",
+        "short-description": "A fun event...",
+        "description": "A debate competition was held with the topic 'Has technology changed our life for better or worse?'. The event aimed to discuss our dependencies on technology. Ultimately, the team supporting 'Technology made their lives better' emerged victorious.",
+        "photos": {
+            "photo1": "https://ik.imagekit.io/energyclubeec/img/event_Take-De-Bait.jpg"
+        },
+        "btn": "events/amongus.html"
+    },
+    "event2": {
+        "name": "Treasure hunt",
+        "date": "30.1.2023",
+        "location": "TRP Auditorium, EEC",
+        "short-description": "A seminar titled Energy Auditing...",
+        "description": "A seminar titled <b> Energy Auditing </b> featuring Mr. K. Prabhakaran, Managing Director of Elbound Systems Pvt Ltd, as the speaker. The event's purpose was to educate students about energy auditing's significance and process. The event emphasized the importance of energy conservation from an engineer's perspective.",
+        "photos": {
+            "photo1": "https://ik.imagekit.io/energyclubeec/img/event_Seminar.jpg"
+        },
+        "btn": "events/treasure_hunt.html"
+    },
+    "event3": {
+        "name": "Slytherin's Curse",
+        "date": "31.1.2023",
+        "location": "OAT, EEC",
+        "short-description": "A unique technical event aimed...",
+        "description": "A unique technical event aimed to enhance students' technical skills in an engaging and interactive way. Team of two participated, answering questions related to aptitude, technical knowledge, and general knowledge of varying difficulties.",
+        "photos": {
+            "photo1": "https://ik.imagekit.io/energyclubeec/img/event_Slytherin_s_Curse.jpg"
+        },
+        "btn": "events/slytherin's-curse_2.html"
+    },
+    "event4": {
+        "name": "Paper presentation",
+        "date": "01-02-2023",
+        "location": "Hi Tech Hall 1&2, EEC",
+        "short-description": "Talent wins games but teamwork...",
+        "description": "Talent wins games but teamwork and intelligence wins championship. The Energy Club graciously invites you all to Trifecta. A plot with 3 exciting games, as a part of our flagship event Technotsav 2023. The preliminary rounds are Cody Cross and Black Out. The final deciding round is Tittle Tattle. A fantabulous trio of events that will make you move around the clock! Participate with your team to enjoy these fun-filled events and win exciting prizes.",
+        "photos": {
+            "photo1": "https://ik.imagekit.io/energyclubeec/img/event_Trifecta.jpg"
+        },
+        "btn": "events/paper_presentation.html"
+    },
+    "event5": {
+        "name": "Ideathon",
+        "date": "02-02-2023",
+        "location": "Easwari Engineering College",
+        "short-description": "Today's wastage is tomorrow's shortage...",
+        "description": "Today's wastage is tomorrow's shortage. The Energy Club brings to you the anthemic Sherlock Ωhms as a part of its sensational flagship event Technotsav 2023. Let’s watch who can decipher the clues before the time runs out. Experience the electrifying treasure hunt with your crime partners.",
+        "photos": {
+            "photo1": "https://ik.imagekit.io/energyclubeec/img/event_Sherlock_Ohms.jpg"
+        },
+        "btn": "events/Ideathon.html"
+    }
+}
