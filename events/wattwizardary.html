@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slytherin's Curse 2.0</title>
+    <title>Watt Wizardary</title>
     <link rel="icon" href="https://ik.imagekit.io/energyclub/Assets/logo.png" type="image/x-icon">
     <meta name="description"
         content="Energy Club is a student club of Easwari Engineering College, Chennai. We are a group of students who are passionate about energy and its applications. We are a group of students who are passionate about energy and its applications.">
     <meta property="og:image" content="https://ik.imagekit.io/energyclub/Assets/logo.png">
-    <meta property="og:title" content="Slytherin's Curse" />
+    <meta property="og:title" content="Watt Wizardary" />
     <meta property="og:site_name" content="Energy Club" />
     <meta property="og:type" content="website" />
     <meta property="og:developer" content="Srivatsan Sk" />
@@ -67,7 +67,7 @@
                     <h2 class="card-title text-custom" id="eventName">Loading...</h2>
                     <p class="text-color" id="eventDate">Loading...</p>
                     <p class="card-text" id="eventDescription">Loading...</p>
-                    <a href="#" class="btn btn-custom ">Register Now</a>
+                    <a href="https://forms.gle/vvVB6dKPQqeCUPpn7" class="btn btn-custom ">Register Now</a>
                 </div>
             </div>
         </div>
@@ -183,7 +183,7 @@
 
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-            © 2023 Copyright:
+            © 2024 Copyright:
             <a class="text-color" href="https://energyclubeec.org.in">Energy Club</a>
         </div>
         <!-- Copyright -->
@@ -191,10 +191,10 @@
 
     <script>
 
-        fetch('../technostav.json')
+        fetch('https://energy-club-eec.github.io/json/technotsav24.json')
             .then(response => response.json())
             .then(data => {
-                const event = data['event3'];
+                const event = data['event2'];
                 if (event) {
                     document.getElementById('eventName').textContent = event.name;
                     document.getElementById('eventDate').textContent = event.date;

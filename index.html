@@ -35,7 +35,7 @@
             <img class="ani" id="ani" src="..." />
         </div>
     </div>
-    <main id="main-content" style="display: none;">
+    < id="main-content" style="display: none;">
         <!-- <div class="modal show" tabindex="-1" id="popUp" role="dialog">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content  bg-custom">
@@ -43,8 +43,8 @@
                         <h5 class="modal-title text-custom">Registration</h5>
 <a class="text-color" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></a> </div>
                     <div class="modal-body">
-                        <a href="https://forms.gle/bsx1i2qb6A8gyzEo6">
-                        <img src="https://ik.imagekit.io/energyclub/Posters/membership.png"class="img-fluid rounded" alt="Membership Poster"
+                        <a href="#">
+                            <img src="https://ik.imagekit.io/energyclub/Posters/poster.png" class="img-fluid rounded" alt="Membership Poster"
                             style="width: 100%; height: 100%;" ></a>
                     </div>
                     <div class="modal-footer">
@@ -175,7 +175,46 @@
                 </div>
             </div>
         </section>
-        <div class="our-success-section mt-2">
+        <section>
+            <div class="our-success-section mt-2">
+                <h4 class="text-custom mt-2">Upcoming Events</h4>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-3  event" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                        <div class="card bg-custom border-custom shadow">
+                            <div class="card-body text-custom">
+                                <h5 class="card-title" id="uevent1-title">Loading...</h5>
+                                <p class="card-text" id="uevent1-description">Loading...</p>
+                                <a href="#" class="btn btn-custom" id="uevent1-button">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 event" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                        <div class="card bg-custom border-custom shadow">
+                            <div class="card-body text-custom">
+                                <h5 class="card-title" id="uevent2-title">Loading...</h5>
+                                <p class="card-text" id="uevent2-description">Loading...</p>
+                                <a href="#" class="btn btn-custom" id="uevent2-button">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3  event" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                        <div class="card bg-custom border-custom shadow">
+                            <div class="card-body text-custom" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                <h5 class="card-title ">Other Events</h5>
+                                <p class="card-text">
+                                    In our mission to raise awareness about energy and sustainable development, we've
+                                    hosted numerous events.
+                                </p>
+                                <a href="#" class="btn btn-custom">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+            <div class="our-success-section mt-2">
             <h4 class="text-custom mt-2">Our Success</h4>
             <hr>
             <div class="row">
@@ -344,7 +383,8 @@
                             <h6 class="text-uppercase fw-bold">Contact</h6>
                             <hr class="mb-4 mt-0 d-inline-block mx-auto"
                                 style="width: 60px; background-color: #7c4dff; height: 2px" />
-                            <p><a href="https://maps.app.goo.gl/aEi4pAXkXCxscni86" class="text-bold">Easwari Engineering
+                            <p><a href="https://maps.app.goo.gl/aEi4pAXkXCxscni86" class="text-bold">Easwari
+                                    Engineering
                                     College </a></p>
                             <p><a class="text-color" href="mailto:energyclubeec@gmail.com">energyclubeec@gmail.com</a>
                             </p>
@@ -359,7 +399,7 @@
 
             <!-- Copyright -->
             <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-                © 2023 Copyright:
+                © 2024 Copyright:
                 <a class="text-color" href="https://energyclubeec.org.in">Energy Club</a>
             </div>
             <!-- Copyright -->
@@ -368,15 +408,15 @@
     </main>
     <script>
         AOS.init();
-           
+
         function hideLoadingScreen() {
             const loadingScreen = document.getElementById("loading-screen");
             const mainContent = document.getElementById("main-content");
 
             loadingScreen.style.display = "none";
             mainContent.style.display = "block";
-                    var popUp = new bootstrap.Modal(document.getElementById('popUp'), {})
-popUp.toggle()
+            var popUp = new bootstrap.Modal(document.getElementById('popUp'), {})
+            popUp.toggle()
         }
         setTimeout(hideLoadingScreen, 3000);
 
@@ -398,6 +438,31 @@ popUp.toggle()
             })
             .catch(error => console.error('Error loading JSON data:', error));
 
+            // Upcoming Events
+            fetch('https://energy-club-eec.github.io/json/technotsav24.json')
+                    .then(response => response.json())
+                    .then(data => {
+                        // Access the data for uuevent1 and uevent2
+                        const uevent1 = data.uevent1;
+                        const uevent2 = data.uevent2;
+                        //const uevent3 = data.uevent3;
+                        //const uevent4 = data.uevent4;
+                        //const uevent5= data.uevent5;
+                        //const uevent6 = data.uevent6;
+
+                        // Populate the card elements with data from the JSON
+                        document.getElementById('uevent1-title').textContent = uevent1.name;
+                        document.getElementById('uevent1-description').textContent = uevent1['short-description'];
+                        document.getElementById('uevent1-button').href = uevent1.btn;
+
+                        document.getElementById('uevent2-title').textContent = uevent2.name;
+                        document.getElementById('uevent2-description').textContent = uevent2['short-description'];
+                        document.getElementById('uevent2-button').href = uevent2.btn;
+                        //document.getElementById('uevent3-title').textContent = uevent2.name;
+                        //document.getElementById('uevent3-description').textContent = uevent2['short-description'];
+                        //document.getElementById('uevent3-button').href = uevent2.btn;
+                    })
+                    .catch(error => console.error('Error loading JSON data:', error));
     </script>
 </body>
 

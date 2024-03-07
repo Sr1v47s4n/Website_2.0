@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ideathon</title>
+    <title>Slytherin's Curse</title>
     <link rel="icon" href="https://ik.imagekit.io/energyclub/Assets/logo.png" type="image/x-icon">
     <meta name="description"
         content="Energy Club is a student club of Easwari Engineering College, Chennai. We are a group of students who are passionate about energy and its applications. We are a group of students who are passionate about energy and its applications.">
@@ -67,7 +67,7 @@
                     <h2 class="card-title text-custom" id="eventName">Loading...</h2>
                     <p class="text-color" id="eventDate">Loading...</p>
                     <p class="card-text" id="eventDescription">Loading...</p>
-                    <a href="https://forms.gle/Wwznje7g5oSnAYYU7" class="btn btn-custom ">Register Now</a>
+                    <a href="https://forms.gle/AsmfNPm3zNR7iM5q7" class="btn btn-custom ">Register Now</a>
                 </div>
             </div>
         </div>
@@ -192,23 +192,23 @@
     <script>
 
         fetch('https://energy-club-eec.github.io/json/technotsav24.json')
-                .then(response => response.json())
-                .then(data => {
-                    const event = data['event4'];
-                    if (event) {
-                        document.getElementById('eventName').textContent = event.name;
-                        document.getElementById('eventDate').textContent = event.date;
-                        document.getElementById('eventDescription').textContent = event.description;
-                        document.getElementById('eventImage').src = event.photos.photo1;
-                        // Add similar code for other fields you want to display
-                    } else {
-                        alert('Event not found');
-                    }
-                })
-                .catch(error => {
-                    console.error('Error loading JSON:', error);
-                    alert('Error loading JSON');
-                });
+            .then(response => response.json())
+            .then(data => {
+                const event = data['event3'];
+                if (event) {
+                    document.getElementById('eventName').textContent = event.name;
+                    document.getElementById('eventDate').textContent = event.date;
+                    document.getElementById('eventDescription').textContent = event.description;
+                    document.getElementById('eventImage').src = event.photos.photo1;
+                    // Add similar code for other fields you want to display
+                } else {
+                    alert('Event not found');
+                }
+            })
+            .catch(error => {
+                console.error('Error loading JSON:', error);
+                alert('Error loading JSON');
+            });
 
     </script> <!-- Add more content specific to this event -->
 </body>
