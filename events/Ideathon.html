@@ -67,6 +67,14 @@
                     <h2 class="card-title text-custom" id="eventName">Loading...</h2>
                     <p class="text-color" id="eventDate">Loading...</p>
                     <p class="card-text" id="eventDescription">Loading...</p>
+                    <p class="card-text"><b>Problem Statements:<a href="https://drive.google.com/file/d/1YwLkibxJrPne65IP3p7tNV-hS5nFEnLQ/view?usp=sharing">Click Here</a></b></p>
+                    <p class="card-text"><b>Team Size: 3</b></p>
+                    
+                    
+                    <p class="card-text"><small>Registration Fee:Rs.150/- per team
+
+                        </small></p>
+
                     <a href="https://forms.gle/Wwznje7g5oSnAYYU7" class="btn btn-custom ">Register Now</a>
                 </div>
             </div>
@@ -194,7 +202,7 @@
         fetch('https://energy-club-eec.github.io/json/technotsav24.json')
                 .then(response => response.json())
                 .then(data => {
-                    const event = data['event4'];
+                    const event = data['event5'];
                     if (event) {
                         document.getElementById('eventName').textContent = event.name;
                         document.getElementById('eventDate').textContent = event.date;
