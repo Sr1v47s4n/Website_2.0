@@ -13,11 +13,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (initialTheme === "dark") {
         setDarkMode();
-        updateImageSource(currentTheme = "dark");
+        // updateImageSource(currentTheme = "dark");
         console.log("dark mode");
     } else {
         setLightMode();
-        updateImageSource(currentTheme = "light");
+        // updateImageSource(currentTheme = "light");
         console.log("light mode");
     }
 
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             setDarkMode();
         }
-        updateImageSource(currentTheme);
+        // updateImageSource(currentTheme);
     }
 
     function setDarkMode() {
@@ -46,14 +46,14 @@ document.addEventListener("DOMContentLoaded", function () {
         localStorage.setItem("theme", "light");
         localStorage.setItem("colorMode", "light"); // Store the user's color mode preference
     }
-    function updateImageSource(currentTheme) {
-        const logoImage = document.getElementById("ani");
+    // function updateImageSource(currentTheme) {
+    //     const logoImage = document.getElementById("ani");
 
-        if (currentTheme === "dark") {
-            logoImage.src = "https://ik.imagekit.io/energyclub/Assets/logo_dark.webp"; // Change to the dark theme image
-        } else {
-            logoImage.src = "https://ik.imagekit.io/energyclub/Assets/logo.webp"; // Change to the light theme image
-        }
-    }
+    //     if (currentTheme === "dark") {
+    //         logoImage.src = "https://ik.imagekit.io/energyclub/Assets/logo_dark.webp"; // Change to the dark theme image
+    //     } else {
+    //         logoImage.src = "https://ik.imagekit.io/energyclub/Assets/logo.webp"; // Change to the light theme image
+    //     }
+    // }
 
 })

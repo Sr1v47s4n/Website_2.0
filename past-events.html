@@ -90,6 +90,11 @@
         </nav>
 
         <div class="container">
+            <h2 class="text-center text-custom mt-5">Upcoming Events</h2>
+            <hr class="text-color">
+            <div class="row" id="uevent-cards" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <!-- Cards will be inserted here -->
+            </div>
             <h2 class="text-center text-custom mt-5">Past Events</h2>
             <hr class="text-color">
             <div class="row" id="event-cards" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
@@ -264,6 +269,27 @@
             .catch((error) => {
                 console.error("Error fetching data: " + error);
             });
+            
+                // URL of the JSON data hosted on your platform
+                const ujsonUrl = "https://energy-club-eec.github.io/json/technotsav24.json";
+
+                // Fetch the JSON data
+                fetch(ujsonUrl)
+                    .then((response) => response.json())
+                    .then((data) => {
+                        // Get the container where cards will be inserted
+                        const eventCardsContainer = document.getElementById("uevent-cards");
+
+                        // Loop through the retrieved event data and create cards for each event
+                        for (const eventId in data) {
+                            const event = data[eventId];
+                            const eventCard = createEventCard(event);
+                            eventCardsContainer.appendChild(eventCard);
+                        }
+                    })
+                    .catch((error) => {
+                        console.error("Error fetching data: " + error);
+                    });
     </script>
 </body>
 
