@@ -51,39 +51,53 @@
                     </div>
                 </div>
             </div> -->
-        <nav class="navbar navbar-expand-lg navbar-custom shadow">
-            <div class="container"><a class="navbar-brand" href="/">
-                    <img src="https://ik.imagekit.io/energyclub/Assets/logo.png" width="75" height="75"
-                        class="d-inline-block " alt="">
-                    &nbsp Energy Club
-                </a>
-                <button class="navbar-toggler text-color" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav">
-                    <i class="bi bi-list"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item px-2">
-                            <a class="nav-link" href="/about">About</a>
-                        </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link" href="/past-events">Events</a>
-                        </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link" href="/our_team">Our Team</a>
-                        </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link" href="/contact">Contact</a>
-                        </li>
-                        <li class="nav-item px-2">
-
-                            <img id="modeToggle" onclick="setTheme()" class="icon color-icon" src="theme_dark.png"
-                                alt="Theme" />
-
-                        </li>
-                    </ul>
+            <nav class="navbar navbar-expand-lg navbar-custom fixed-top shadow ">
+                <div class="container">
+                    <a href="/" class="nav-brand">
+                        <img src="https://ik.imagekit.io/energyclub/Assets/logo.png" width="50" height="50" alt="">
+                    </a>
+                    <a href="/" class="mx-3 nav-brand">
+                        <img src="eec_logo.png" width="50" height="50" alt="">
+                    </a>
+            
+                    <button class="navbar-toggler text-color" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <i class="bi bi-list"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item px-2">
+                                <a class="nav-link" href="/about">About</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link" href="/past-events">Events</a>
+                            </li>
+                            <li class="nav-item dropdown px-2 navbar-custom ">
+                                <a class="nav-link dropdown-toggle navbar-custom" href="/our_team" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Our Team
+                                </a>
+                                <ul class="dropdown-menu navbar-custom">
+                                    <li><a class="dropdown-item nav-link" style="background-color:var(--nav-color);"
+                                            href="/our_team">Tenure Cygnus</a></li>
+                                    <li><a class="dropdown-item nav-link" style="background-color:var(--nav-color);"
+                                            href="/our_team_23">Tenure Delta</a></li>
+            
+                                </ul>
+                            </li>
+            
+                            <li class="nav-item px-2">
+                                <a class="nav-link" href="/contact">Contact</a>
+                            </li>
+                            <li class="nav-item px-2">
+            
+                                <img id="modeToggle" onclick="setTheme()" class="icon color-icon" src="theme_dark.png"
+                                    alt="Theme" />
+            
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-        </nav>
+            </nav>
         <!-- Designed and Developed by Srivatsan Sk -->
         <div class="container">
             <h2 class="text-center text-custom mt-5">Our Team</h2>

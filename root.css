@@ -1,0 +1,33 @@
+
+
+@import url("https://fonts.googleapis.com/css?family=Outfit:300,400,200");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --nav-color: #ffffff;
+  --nav-text: #000000;
+  --text-color: #000000;
+  --text-custom: #32c36c;
+  --card-color: #ffffff;
+  --border-color: #ffffff;
+  --bg-color: #ffffff;
+  --our-team:#32c36c;
+  --error-bg:#ececec;
+}
+/* Dark Mode */
+
+[theme="dark"] {
+  --nav-color: #090909;
+  --nav-text: #32c36c;
+  --text-color: #ffffff;
+  --text-custom: #32c36c;
+  --card-color: #090909;
+  --border-color: #4f4e51;
+  --bg-color: #000000;
+  --our-team:#090909;
+  --error-bg:#1f1f1f;
+}

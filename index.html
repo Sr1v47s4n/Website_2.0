@@ -37,7 +37,7 @@
     </div>
     <main id="main-content" style="display: none;">
 
-        <div class="modal show" tabindex="-1" id="popUp" role="dialog">
+        <!-- <div class="modal show" tabindex="-1" id="popUp" role="dialog">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content  bg-custom">
                     <div class="modal-header">
@@ -55,13 +55,16 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <nav class="navbar navbar-expand-lg navbar-custom shadow">
-            <div class="container"><a class="navbar-brand" href="/">
-                    <img src="https://ik.imagekit.io/energyclub/Assets/logo.png" width="75" height="75"
-                        class="d-inline-block " alt="">
-                    &nbsp Energy Club
+        </div> -->
+        <nav class="navbar navbar-expand-lg navbar-custom fixed-top shadow ">
+            <div class="container">
+                <a href="/" class="nav-brand">
+                    <img src="https://ik.imagekit.io/energyclub/Assets/logo.png" width="50" height="50" alt="">
                 </a>
+                <a href="/" class="mx-3 nav-brand">
+                    <img src="eec_logo.png" width="50" height="50" alt="">
+                </a>
+
                 <button class="navbar-toggler text-color" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav">
                     <i class="bi bi-list"></i>
@@ -74,9 +77,17 @@
                         <li class="nav-item px-2">
                             <a class="nav-link" href="/past-events">Events</a>
                         </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link" href="/our_team">Our Team</a>
+                        <li class="nav-item dropdown px-2 navbar-custom ">
+                            <a class="nav-link dropdown-toggle navbar-custom" href="/our_team" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Our Team
+                            </a>
+                            <ul class="dropdown-menu navbar-custom">
+                                <li><a class="dropdown-item nav-link" style="background-color:var(--nav-color);" href="/our_team">Tenure Cygnus</a></li>
+                                <li><a class="dropdown-item nav-link" style="background-color:var(--nav-color);" href="/our_team_23">Tenure Delta</a></li>
+
+                            </ul>
                         </li>
+                        
                         <li class="nav-item px-2">
                             <a class="nav-link" href="/contact">Contact</a>
                         </li>
@@ -88,6 +99,7 @@
                         </li>
                     </ul>
                 </div>
+            </div>
         </nav>
 
         <div id="ImageCarousel" class="carousel mt-1 slide pointer-event" data-bs-ride="carousel">
@@ -178,7 +190,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <!-- <section>
             <div class="our-success-section mt-2">
                 <h4 class="text-custom mt-2">Upcoming Events</h4>
                 <hr>
@@ -186,22 +198,14 @@
                     <div class="col-sm-3  event" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                         <div class="card bg-custom border-custom shadow">
                             <div class="card-body text-custom">
-                                <h5 class="card-title" id="uevent1-title">Loading...</h5>
-                                <p class="card-text" id="uevent1-description">Loading...</p>
-                                <a href="technotsav24" class="btn btn-custom" id="uevent1-button">Read More</a>
+                                <h5 class="card-title" id=title">Slytherin Curse</h5>
+                                <p class="card-text" id="description">Four teams will play the game at the same time...
+                                </p>
+                                <a href="" class="btn btn-custom disabled" id="button" disabled>Comming Soon</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3 event" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                        <div class="card bg-custom border-custom shadow">
-                            <div class="card-body text-custom">
-                                <h5 class="card-title" id="uevent2-title">Loading...</h5>
-                                <p class="card-text" id="uevent2-description">Loading...</p>
-                                <a href="technotsav24" class="btn btn-custom" id="uevent2-button">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3  event" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                    <!-- <div class="col-sm-3  event" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                         <div class="card bg-custom border-custom shadow">
                             <div class="card-body text-custom" data-aos="fade-up"
                                 data-aos-anchor-placement="top-bottom">
@@ -215,10 +219,10 @@
                         </div>
                     </div>
 
+                </div> -->
                 </div>
-            </div>
-        </section>
-        
+        </section> -->
+
         <div class="our-success-section mt-2">
             <h4 class="text-custom mt-2">Our Success</h4>
             <hr>
@@ -372,11 +376,11 @@
                             <p>
                                 <a href="https://www.linkedin.com/in/srivatsan-sk/" class="text-color">Developer</a>
                             </p>
-                            <p>
-                                <a href="mailto:energyclubeec@gmail.com" class="text-color">Enquiry</a>
+                            <p><a class="text-color" href="/terms">Terms and Conditions</a></p>
+                            <p><a class="text-color" href="/privacy">Privacy Policy</a>
                             </p>
                             <p>
-                                <a href="mailto:energyclubeec@gmail.com" class="text-color">Report</a>
+                                <a href="/contact" class="text-color">Contact Us</a>
                             </p>
 
                         </div>
@@ -391,8 +395,10 @@
                             <p><a href="https://maps.app.goo.gl/aEi4pAXkXCxscni86" class="text-bold">Easwari
                                     Engineering
                                     College </a></p>
-                            <p><a class="text-color" href="mailto:energyclubeec@gmail.com">energyclubeec@gmail.com</a>
+                            <p>
+                                <a href="mailto:energyclubeec@gmail.com" class="text-color">Enquiry</a>
                             </p>
+                            
 
                         </div>
                         <!-- Grid column -->
@@ -425,7 +431,7 @@
         }
         setTimeout(hideLoadingScreen, 3000);
 
-        fetch('https://energy-club-eec.github.io/json/home.json')
+        /*fetch('https://energy-club-eec.github.io/json/home.json')
             .then(response => response.json())
             .then(data => {
                 // Access the data for event1 and event2
@@ -467,7 +473,7 @@
                 //document.getElementById('uevent3-description').textContent = uevent2['short-description'];
                 //document.getElementById('uevent3-button').href = uevent2.btn;
             })
-            .catch(error => console.error('Error loading JSON data:', error));
+            .catch(error => console.error('Error loading JSON data:', error));*/
     </script>
     </body>
 

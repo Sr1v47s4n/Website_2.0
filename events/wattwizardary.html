@@ -4,16 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Watt Wizardary</title>
+    <title>Workshop</title>
     <link rel="icon" href="https://ik.imagekit.io/energyclub/Assets/logo.png" type="image/x-icon">
     <meta name="description"
         content="Energy Club is a student club of Easwari Engineering College, Chennai. We are a group of students who are passionate about energy and its applications. We are a group of students who are passionate about energy and its applications.">
     <meta property="og:image" content="https://ik.imagekit.io/energyclub/Assets/logo.png">
-    <meta property="og:title" content="Watt Wizardary" />
+    <meta property="og:title" content="Slytherin's Curse" />
     <meta property="og:site_name" content="Energy Club" />
     <meta property="og:type" content="website" />
     <meta property="og:developer" content="Srivatsan Sk" />
     <meta property="og:author" content="Srivatsan Sk" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
@@ -25,13 +30,15 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-custom shadow">
-        <div class="container"><a class="navbar-brand" href="/">
-                <img src="https://ik.imagekit.io/energyclub/Assets/logo.png" width="75" height="75"
-                    class="d-inline-block " alt="">
-                &nbsp Energy Club
+        <div class="container">
+            <a href="/" class="nav-brand">
+                <img src="https://ik.imagekit.io/energyclub/Assets/logo.png" width="50" height="50" alt="">
             </a>
-            <button class="navbar-toggler text-color" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav">
+            <a href="/" class="mx-3 nav-brand">
+                <img src="eec_logo.png" width="50" height="50" alt="">
+            </a>
+    
+            <button class="navbar-toggler text-color" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <i class="bi bi-list"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -49,15 +56,14 @@
                         <a class="nav-link" href="/contact">Contact</a>
                     </li>
                     <li class="nav-item px-2">
-
+    
                         <img id="modeToggle" onclick="setTheme()" class="icon color-icon" src="../theme_dark.png"
                             alt="Theme" />
-
+    
                     </li>
                 </ul>
             </div>
-    </nav>
-    <div class="card mb-3 rounded" style="max-width: 80%; left:10%; top:5px;">
+    </nav>    <div class="card mb-3 rounded" style="max-width: 80%; left:10%; top:5px;">
         <div class="row g-0">
             <div class="col-md-4">
                 <img src=".." id="eventImage" class="img-fluid rounded-start" alt="...">
@@ -67,22 +73,12 @@
                     <h2 class="card-title text-custom" id="eventName">Loading...</h2>
                     <p class="text-color" id="eventDate">Loading...</p>
                     <p class="card-text" id="eventDescription">Loading...</p>
-                    <p class="card-text"><b>Each team consists of three members.</b></p>
-                    
-                    
-                    <p class="card-text"><small>Registration Fee:
-                            <ul>
-                                <li>For Non Members- Rs.90 /- per team
-</li>
-                                <li>For Members- Rs.70 /- per team
-</li>
-                            </ul>
-                        </small></p>
-                    <a href="https://forms.gle/vvVB6dKPQqeCUPpn7" class="btn btn-custom ">Register Now</a>
+
                 </div>
             </div>
         </div>
     </div>
+    <!-- Footer -->
     <footer class="text-center bg-custom text-lg-start text-color">
         <!-- Section: Social media -->
         <section class="d-flex justify-content-between p-4 text-color" style="background-color: #21D192">
@@ -164,11 +160,11 @@
                         <p>
                             <a href="https://www.linkedin.com/in/srivatsan-sk/" class="text-color">Developer</a>
                         </p>
-                        <p>
-                            <a href="mailto:energyclubeec@gmail.com" class="text-color">Enquiry</a>
+                        <p><a class="text-color" href="/terms">Terms and Conditions</a></p>
+                        <p><a class="text-color" href="/privacy">Privacy Policy</a>
                         </p>
                         <p>
-                            <a href="mailto:energyclubeec@gmail.com" class="text-color">Report</a>
+                            <a href="/contact" class="text-color">Contact Us</a>
                         </p>
 
                     </div>
@@ -180,9 +176,13 @@
                         <h6 class="text-uppercase fw-bold">Contact</h6>
                         <hr class="mb-4 mt-0 d-inline-block mx-auto"
                             style="width: 60px; background-color: #7c4dff; height: 2px" />
-                        <p><a href="https://maps.app.goo.gl/aEi4pAXkXCxscni86" class="text-bold">Easwari Engineering
+                        <p><a href="https://maps.app.goo.gl/aEi4pAXkXCxscni86" class="text-bold">Easwari
+                                Engineering
                                 College </a></p>
-                        <p><a class="text-color" href="mailto:energyclubeec@gmail.com">energyclubeec@gmail.com</a></p>
+                        <p>
+                            <a href="mailto:energyclubeec@gmail.com" class="text-color">Enquiry</a>
+                        </p>
+
 
                     </div>
                     <!-- Grid column -->
@@ -199,6 +199,8 @@
         </div>
         <!-- Copyright -->
     </footer>
+    <!-- Footer -->
+
 
     <script>
 
