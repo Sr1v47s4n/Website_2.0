@@ -217,42 +217,7 @@
                 </div>
             </div>
         </section>
-        <div class="our-success-section mt-2">
-            <h4 class="text-custom mt-2">Upcoming Events</h4>
-            <hr>
-            <div class="row">
-                <div class="col-sm-3  uevent" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                    <div class="card bg-custom border-custom shadow">
-                        <div class="card-body text-custom">
-                            <h5 class="card-title" id="uevent1-title">Loading...</h5>
-                            <p class="card-text" id="uevent1-description">Loading...</p>
-                            <a href="#" class="btn btn-custom" id="uevent1-button">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 uevent" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                    <div class="card bg-custom border-custom shadow">
-                        <div class="card-body text-custom">
-                            <h5 class="card-title" id="uevent2-title">Loading...</h5>
-                            <p class="card-text" id="uevent2-description">Loading...</p>
-                            <a href="#" class="btn btn-custom" id="uevent2-button">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3  event" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                    <div class="card bg-custom border-custom shadow">
-                        <div class="card-body text-custom" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                            <h5 class="card-title ">Other Events</h5>
-                            <p class="card-text">In our mission to raise awareness about energy and sustainable
-                                development,
-                                we've hosted numerous events.</p>
-                            <a href="technotsav24" class="btn btn-custom">View More</a>
-                        </div>
-                    </div>
-                </div>
 
-            </div>
-        </div>
         <div class="our-success-section mt-2">
             <h4 class="text-custom mt-2">Our Success</h4>
             <hr>
@@ -482,8 +447,8 @@
             .then(response => response.json())
             .then(data => {
                 // Access the data for uuevent1 and uevent2
-                const uevent1 = data.event1;
-                const uevent2 = data.event2;
+                const event1 = data.event1;
+                const event2 = data.event2;
                 //const uevent3 = data.uevent3;
                 //const uevent4 = data.uevent4;
                 //const uevent5= data.uevent5;
